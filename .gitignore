@@ -4,7 +4,8 @@ ipch/*
 GcodeVis/Debug/*
 
 
-
+*.sln
+*.db
 *.vcxproj
 *filters
 # Prerequisites
