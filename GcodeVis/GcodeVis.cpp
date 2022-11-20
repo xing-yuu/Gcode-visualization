@@ -11,7 +11,7 @@ int main()
 	Model *resultModel=new Model;
 	cin >> path >> LayerThickness >> LineWidth;
 	visualizaion::readInGcode(path, resultModel);
-	visualizaion::generateModelForRendering("Result", LayerThickness, LineWidth, resultModel);
+	visualizaion::generateModelForRendering("result/Result", LayerThickness, LineWidth, resultModel);
     return 0;
 }
 

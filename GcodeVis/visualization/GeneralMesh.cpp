@@ -90,7 +90,7 @@ void General_Mesh::genCube()
 
 
 	ofstream fout;
-	fout.open("cube.obj");
+	fout.open("resource/cube.obj");
 	for (int i = 0; i < cube_vertex.size(); i++)
 	{
 		fout << "v " << cube_vertex[i].m_x << " " << cube_vertex[i].m_y << " " << cube_vertex[i].m_z << endl;
@@ -162,7 +162,7 @@ void General_Mesh::genCylinder()
 
 
 	ofstream fout;
-	fout.open("cylinder.obj");
+	fout.open("resource/cylinder.obj");
 	for (int i = 0; i < cylinder_vertex.size(); i++)
 	{
 		fout << "v " << cylinder_vertex[i].m_x << " " << cylinder_vertex[i].m_y << " " << cylinder_vertex[i].m_z << endl;
@@ -252,7 +252,7 @@ void General_Mesh::genHollowCylinder(float inside_radius, float outside_radius, 
 	}
 
 	ofstream fout;
-	fout.open("hollow_cylinder.obj");
+	fout.open("resource/hollow_cylinder.obj");
 	for (int i = 0; i < hollow_cylinder_vertex.size(); i++)
 	{
 		fout << "v " << hollow_cylinder_vertex[i].m_x << " " << hollow_cylinder_vertex[i].m_y << " " << hollow_cylinder_vertex[i].m_z << endl;
@@ -385,7 +385,7 @@ void General_Mesh::genHollowCube(float width, float radius, float thick)
 
 
 	ofstream fout;
-	fout.open("hollow_cube.obj");
+	fout.open("resource/hollow_cube.obj");
 	for (int i = 0; i < hollow_cube_vertex.size(); i++)
 	{
 		fout << "v " << hollow_cube_vertex[i].m_x << " " << hollow_cube_vertex[i].m_y << " " << hollow_cube_vertex[i].m_z << endl;
